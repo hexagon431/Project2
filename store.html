@@ -2,25 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About | Slaughterhouse Records</title>
-    <link rel="stylesheet" href="css/previous/store/style.css" type="text/css">
+    <title>Store | Slaughterhouse Records</title>
+    <link rel="stylesheet" href="cdn/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script defer src="cdn/jquery-3.2.1.js"></script>
+    <script defer src="cdn/js/bootstrap.js"></script>
 </head>
 <body>
-    <div class="centerbox">
-        <div class="topbar">
-            <div class="nav">
-                <a href="index.html"><img id="longLogo" src="img/logo-long.png"></a>
-
-                <div class="nav-links">
-                    <a class="nav-link" href="index.html">Home</a>
-                    <a class="nav-link" href="./store.html">Store</a>
-                    <a class="nav-link" href="band-directory.html">Bands</a>
-                </div>
-
-            </div>
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsedNavbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">Slaughterhouse Records</a>
         </div>
 
-        <div class="main-body">
+        <div class="collapse navbar-collapse" id="collapsedNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li class="active"><a href="#">Store <span class="sr-only">(current)</span></a></li>
+                <li><a href="band-directory.html">Bands</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="centerbox">
+        <div class="content-body">
             <div class="store-container">
                 <div class="store-header">
                     <h2>STORE</h2>

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Share Tech Mono", monospace;
+  src: url("../fonts/ShareTechMono-Regular.ttf");
+}
+
+@font-face{
+  font-family: "Ravenscroft";
+  src: url("../fonts/Ravenscroft.ttf");
+}
+
+@mixin content-divider{
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+
+$gray-border: solid 3px rgba(206, 206, 206, .7);
+$page-font: "Share Tech Mono", monospace;
+$welcome-font: "Ravenscroft";

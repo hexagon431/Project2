@@ -1,51 +1,196 @@
-/*
-Error: Invalid CSS after ")": expected "{", was "}"
-        on line 51 of style.scss
+@font-face {
+  font-family: "Share Tech Mono", monospace;
+  src: url("../fonts/ShareTechMono-Regular.ttf"); }
+@font-face {
+  font-family: "Ravenscroft";
+  src: url("../fonts/Ravenscroft.ttf"); }
+body {
+  padding: 0px;
+  margin: 0px auto;
+  background-color: rgba(6, 6, 6, 0.73); }
 
-46:   display: flex;
-47:   justify-content: space-around;
-48:   font-size: 20px;
-49:   font-family: "Changa Regular", monospace;
-50: )
-51: }
-52: 
-53: .nav-link {
-54:   color: white;
-55:   text-decoration: none;
-56: }
+.navbar-brand {
+  font-family: "Share Tech Mono", monospace; }
 
-Backtrace:
-style.scss:51
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1208:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1203:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:677:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:697:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:678:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:670:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:696:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:414:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/plugin.rb:82:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.1/bin/scss:13:in `<top (required)>'
-/usr/local/bin/scss:23:in `load'
-/usr/local/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \")\": expected \"{\", was \"}\"\A         on line 51 of style.scss\A \A 46:   display: flex;\A 47:   justify-content: space-around;\A 48:   font-size: 20px;\A 49:   font-family: \"Changa Regular\", monospace;\A 50: )\A 51: }\A 52: \A 53: .nav-link {\A 54:   color: white;\A 55:   text-decoration: none;\A 56: }"; }
+.centerbox {
+  width: 80%;
+  margin: 0 auto; }
+
+.content-body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  color: white;
+  margin-top: 20px;
+  background-color: #000000;
+  border: solid 3px rgba(206, 206, 206, 0.7);
+  font-family: "Share Tech Mono", monospace; }
+  .content-body p {
+    padding: 5px;
+    width: 95%; }
+
+.welcome {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px; }
+  .welcome h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: underline;
+    width: 100%;
+    font-size: 60px;
+    font-family: "Ravenscroft";
+    padding: 0; }
+  .welcome hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0)); }
+
+#centerLogo {
+  display: flex;
+  width: 310px;
+  justify-content: space-between; }
+
+.new-releases-container {
+  border: solid 3px rgba(206, 206, 206, 0.7);
+  border-left: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  width: 200px; }
+  .new-releases-container .new-releases-header {
+    font-size: 23px;
+    margin: 5px 5px; }
+  .new-releases-container .new-release-items {
+    text-align: center; }
+  .new-releases-container .new-item img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto; }
+  .new-releases-container hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0)); }
+  .new-releases-container a {
+    margin: 10px 0px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px; }
+
+.news-container {
+  padding: 5px 5px 10px 5px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column; }
+  .news-container .news-container-header {
+    margin: 0 auto;
+    font-size: 35px;
+    text-align: center; }
+  .news-container hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0)); }
+  .news-container .news-item {
+    width: 100%;
+    border: solid 3px rgba(206, 206, 206, 0.7);
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden; }
+    .news-container .news-item h5 {
+      text-align: center;
+      text-decoration: underline; }
+    .news-container .news-item img {
+      width: 200px; }
+    .news-container .news-item a {
+      color: white; }
+
+.topbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: solid 3px rgba(206, 206, 206, 0.7);
+  border-bottom: hidden;
+  border-top: hidden;
+  background-color: #000000;
+  font-family: "Share Tech Mono", monospace; }
+
+.bands-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 85%;
+  align-items: center; }
+  .bands-container h1 {
+    font-size: 50px; }
+  .bands-container hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0)); }
+  .bands-container .band {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center; }
+    .bands-container .band img {
+      width: 400px; }
+    .bands-container .band .band-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+      padding-top: 10px;
+      margin-bottom: 50px; }
+      .bands-container .band .band-text .band-title {
+        font-size: 40px;
+        font-weight: bold; }
+      .bands-container .band .band-text hr {
+        width: 100%;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0)); }
+
+.store-container {
+  width: 100%;
+  color: white; }
+  .store-container .store-header {
+    width: 100%;
+    text-align: center; }
+    .store-container .store-header hr {
+      width: 100%;
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0)); }
+  .store-container .store-items {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .store-container .store-items .store-item {
+      width: 200px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 5px 30px 5px; }
+      .store-container .store-items .store-item h5 {
+        margin: 0 auto; }
+      .store-container .store-items .store-item img {
+        width: 200px;
+        height: 200px; }
+      .store-container .store-items .store-item button {
+        color: black; }
+
+/*# sourceMappingURL=style.css.map */
