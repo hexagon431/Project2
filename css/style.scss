@@ -41,14 +41,10 @@ body {
   margin-bottom: 20px;
 
   h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-decoration: underline;
-    width: 100%;
     font-size: 60px;
     font-family: $welcome-font;
-    padding: 0;
+    text-align:center;
   }
 
   hr{
@@ -56,10 +52,29 @@ body {
   }
 }
 
-#centerLogo {
-  display: flex;
-  width: 310px;
-  justify-content: space-between;
+.carousel-container{
+  width: 100%;
+  margin-bottom: 40px;
+  .carousel-inner > .item > img{
+    margin: 0 auto;
+  }
+
+  .carousel-caption{
+    position: static;
+  }
+
+  .carousel-indicators{
+    position: relative;
+    bottom: 30px;
+  }
+
+  #newReleasesCarousel{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: solid 2px rgba(206, 206, 206, .7);
+    border-left: hidden;
+    border-right: hidden;
+  }
 }
 
 .new-releases-container {
@@ -105,6 +120,8 @@ body {
   margin-left: 10px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  text-align: center;
 
   .news-container-header {
     margin: 0 auto;
