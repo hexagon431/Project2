@@ -2,8 +2,8 @@
 @import "./variables.scss";
 
 body {
-  padding: 0px;
-  margin: 0px auto;
+  padding: 0;
+  margin: 0 auto;
   background-color: rgba(6, 6, 6, 0.73);
 }
 
@@ -81,44 +81,6 @@ body {
   }
 }
 
-.new-releases-container {
-  border: $gray-border;
-  border-left: hidden;
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  align-items: center;
-  width: 200px;
-
-  .new-releases-header {
-    font-size: 23px;
-    margin: 5px 5px;
-  }
-
-  .new-release-items {
-    text-align: center;
-  }
-
-  .new-item{
-    img{
-      width:180px;
-      height: 180px;
-      margin: 0 auto;
-    }
-  }
-
-  hr{
-   @include content-divider;
-  }
-
-  a{
-    margin: 10px 0px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-  }
-}
-
 .news-container{
   padding: 5px 5px 10px 5px;
   margin-left: 10px;
@@ -160,19 +122,6 @@ body {
 }
 
 //Exclusive to the band directory page
-.topbar {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border: $gray-border;
-  border-bottom: hidden;
-  border-top: hidden;
-  background-color: #000000;
-  font-family: $page-font;
-}
-
 .bands-container {
   display: flex;
   flex-direction: column;

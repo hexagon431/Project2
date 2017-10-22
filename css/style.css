@@ -5,8 +5,8 @@
   font-family: "Ravenscroft";
   src: url("../fonts/Ravenscroft.ttf"); }
 body {
-  padding: 0px;
-  margin: 0px auto;
+  padding: 0;
+  margin: 0 auto;
   background-color: rgba(6, 6, 6, 0.73); }
 
 .flat-icon {
@@ -67,34 +67,6 @@ body {
     border-left: hidden;
     border-right: hidden; }
 
-.new-releases-container {
-  border: solid 3px rgba(206, 206, 206, 0.7);
-  border-left: hidden;
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  align-items: center;
-  width: 200px; }
-  .new-releases-container .new-releases-header {
-    font-size: 23px;
-    margin: 5px 5px; }
-  .new-releases-container .new-release-items {
-    text-align: center; }
-  .new-releases-container .new-item img {
-    width: 180px;
-    height: 180px;
-    margin: 0 auto; }
-  .new-releases-container hr {
-    width: 100%;
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0)); }
-  .new-releases-container a {
-    margin: 10px 0px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px; }
-
 .news-container {
   padding: 5px 5px 10px 5px;
   margin-left: 10px;
@@ -124,18 +96,6 @@ body {
       width: 200px; }
     .news-container .news-item a {
       color: white; }
-
-.topbar {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border: solid 3px rgba(206, 206, 206, 0.7);
-  border-bottom: hidden;
-  border-top: hidden;
-  background-color: #000000;
-  font-family: "Share Tech Mono", monospace; }
 
 .bands-container {
   display: flex;
