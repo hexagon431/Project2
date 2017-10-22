@@ -7,6 +7,10 @@ body {
   background-color: rgba(6, 6, 6, 0.73);
 }
 
+.flat-icon{
+  width: 20px;
+}
+
 .navbar-brand{
   font-family: $page-font;
 }
@@ -232,8 +236,8 @@ body {
   .store-items {
     padding: 25px;
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
-    justify-content:space-between;
 
     .store-item {
       width: 200px;
@@ -243,9 +247,10 @@ body {
       align-items: center;
       text-align: center;
       margin: 0 5px 30px 5px;
+      justify-content: space-around;
 
       h5{
-        margin: 0 auto;
+        margin: 5px 0;
       }
 
       img{
